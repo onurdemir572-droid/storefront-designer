@@ -6,7 +6,7 @@ const navItems = [
   { icon: User, label: "Profil" },
   { icon: Bell, label: "Bildirimlerim" },
   { icon: FileText, label: "İlanlarım" },
-  { icon: MessageCircle, label: "Mesaj Kutusu", badge: 37 },
+  { icon: MessageCircle, label: "Mesaj Kutusu" },
   { icon: Users, label: "Topluluk Projeleri" },
   { icon: Settings, label: "Ayarlar" },
 ];
@@ -37,11 +37,6 @@ const DashboardSidebar = () => {
           >
             <item.icon className={`w-5 h-5 ${item.active ? "text-primary" : ""}`} />
             <span>{item.label}</span>
-            {item.badge && (
-              <span className="ml-auto bg-primary/90 text-primary-foreground text-xs font-bold px-2 py-0.5 rounded-full glow-primary">
-                {item.badge}
-              </span>
-            )}
           </button>
         ))}
       </nav>
