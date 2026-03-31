@@ -1,4 +1,4 @@
-import { MapPin, Calendar, MessageCircle, Edit } from "lucide-react";
+import { MapPin, Calendar, MessageCircle, Edit, Phone, Mail } from "lucide-react";
 import coverBanner from "@/assets/cover-banner.jpg";
 import recyclingLogo from "@/assets/recycling-logo.png";
 
@@ -6,7 +6,7 @@ const ProfileHeader = () => {
   return (
     <div className="rounded-xl overflow-hidden bg-card border border-border">
       {/* Cover */}
-      <div className="h-36 relative overflow-hidden">
+      <div className="h-44 relative overflow-hidden">
         <img src={coverBanner} alt="Kapak" width={1920} height={512} className="w-full h-full object-cover" />
       </div>
 
@@ -23,6 +23,10 @@ const ProfileHeader = () => {
               <div className="flex items-center gap-4 mt-1 text-xs text-muted-foreground">
                 <span className="flex items-center gap-1"><MapPin className="w-3 h-3" /> İstanbul, Kocaeli, Tekirdağ</span>
                 <span className="flex items-center gap-1"><Calendar className="w-3 h-3" /> Üye: 18 Mart 2026 • Mağaza Üyesi</span>
+              </div>
+              <div className="flex items-center gap-4 mt-1 text-xs text-muted-foreground">
+                <span className="flex items-center gap-1"><Phone className="w-3 h-3" /> +90 532 000 00 00</span>
+                <span className="flex items-center gap-1"><Mail className="w-3 h-3" /> kullanici@gmail.com</span>
               </div>
             </div>
           </div>
