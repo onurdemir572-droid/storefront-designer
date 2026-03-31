@@ -1,4 +1,4 @@
-import { Home, User, FileText, MessageCircle, Users, Settings, CheckCircle } from "lucide-react";
+import { Home, User, FileText, MessageCircle, Users, Settings, CheckCircle, Bell } from "lucide-react";
 import recyclingLogo from "@/assets/recycling-logo.png";
 
 const navItems = [
