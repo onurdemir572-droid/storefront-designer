@@ -26,7 +26,10 @@ const listings = [
   },
 ];
 
+import { useState } from "react";
+
 const StoreListings = () => {
+  const [activeTab, setActiveTab] = useState<"vitrin" | "yayinda">("vitrin");
   return (
     <div className="bg-card rounded-xl border border-border p-6">
       <div className="flex items-center justify-between mb-4">
