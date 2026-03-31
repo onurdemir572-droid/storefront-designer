@@ -57,6 +57,8 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "stat-number": "hsl(var(--stat-number))",
+        "badge-active": "hsl(var(--badge-active))",
       },
       borderRadius: {
         lg: "var(--radius)",
