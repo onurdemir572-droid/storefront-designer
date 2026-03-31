@@ -26,11 +26,31 @@ const listings = [
   },
 ];
 
+import { useState } from "react";
+
 const StoreListings = () => {
+  const [activeTab, setActiveTab] = useState<"vitrin" | "yayinda">("vitrin");
   return (
     <div className="bg-card rounded-xl border border-border p-6">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-lg font-bold text-foreground">Mağaza Vitrinim</h2>
+        <div className="flex items-center gap-1 bg-secondary rounded-lg p-1">
+          <button
+            onClick={() => setActiveTab("vitrin")}
+            className={`px-4 py-1.5 rounded-md text-sm font-semibold transition-colors ${
+              activeTab === "vitrin" ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            Mağaza Vitrinim
+          </button>
+          <button
+            onClick={() => setActiveTab("yayinda")}
+            className={`px-4 py-1.5 rounded-md text-sm font-semibold transition-colors ${
+              activeTab === "yayinda" ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            Yayındaki İlanlarım
+          </button>
+        </div>
         <button className="text-muted-foreground text-sm hover:text-foreground transition-colors">
           Tüm İlanlarım →
         </button>

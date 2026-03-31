@@ -1,11 +1,12 @@
-import { Home, User, FileText, MessageCircle, Users, Settings, CheckCircle } from "lucide-react";
+import { Home, User, FileText, MessageCircle, Users, Settings, CheckCircle, Bell } from "lucide-react";
 import recyclingLogo from "@/assets/recycling-logo.png";
 
 const navItems = [
   { icon: Home, label: "Genel Bakış", active: true },
   { icon: User, label: "Profil" },
+  { icon: Bell, label: "Bildirimlerim" },
   { icon: FileText, label: "İlanlarım" },
-  { icon: MessageCircle, label: "Talepler", badge: 37 },
+  { icon: MessageCircle, label: "Mesaj Kutusu", badge: 37 },
   { icon: Users, label: "Topluluk Projeleri" },
   { icon: Settings, label: "Ayarlar" },
 ];
@@ -51,9 +52,7 @@ const DashboardSidebar = () => {
           <span className="text-sm font-bold text-foreground">MAĞAZA ÜYELİĞİ</span>
         </div>
         <p className="text-muted-foreground text-xs mb-1">Bitiş: 13.03.2026</p>
-        <button className="text-accent text-sm font-semibold hover:underline flex items-center gap-1">
-          Avantajları Gör →
-        </button>
+        <p className="text-accent text-sm font-semibold">Aboneliğinizin bitmesine 347 gün kaldı</p>
       </div>
     </aside>
   );
