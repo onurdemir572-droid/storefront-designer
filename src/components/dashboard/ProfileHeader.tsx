@@ -28,6 +28,9 @@ const ProfileHeader = () => {
                   <span className="flex items-center gap-1"><Phone className="w-3 h-3 text-accent" /> +90 532 000 00 00</span>
                   <span className="flex items-center gap-1"><Mail className="w-3 h-3 text-accent" /> kullanici@gmail.com</span>
                 </div>
+                <div className="flex items-center gap-4 mt-1 text-xs text-muted-foreground">
+                  <span className="flex items-center gap-1"><Home className="w-3 h-3 text-accent" /> Organize Sanayi Bölgesi, 1. Cadde No:42, Gebze / Kocaeli</span>
+                </div>
               </div>
             </div>
             <div className="flex gap-2 pb-1">
