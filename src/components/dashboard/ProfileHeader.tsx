@@ -24,6 +24,10 @@ const ProfileHeader = () => {
                 <span className="flex items-center gap-1"><MapPin className="w-3 h-3" /> İstanbul, Kocaeli, Tekirdağ</span>
                 <span className="flex items-center gap-1"><Calendar className="w-3 h-3" /> Üye: 18 Mart 2026 • Mağaza Üyesi</span>
               </div>
+              <div className="flex items-center gap-4 mt-1 text-xs text-muted-foreground">
+                <span className="flex items-center gap-1"><Phone className="w-3 h-3" /> +90 532 000 00 00</span>
+                <span className="flex items-center gap-1"><Mail className="w-3 h-3" /> kullanici@gmail.com</span>
+              </div>
             </div>
           </div>
           <div className="flex gap-2 pb-1">
