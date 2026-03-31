@@ -52,9 +52,7 @@ const DashboardSidebar = () => {
           <span className="text-sm font-bold text-foreground">MAĞAZA ÜYELİĞİ</span>
         </div>
         <p className="text-muted-foreground text-xs mb-1">Bitiş: 13.03.2026</p>
-        <button className="text-accent text-sm font-semibold hover:underline flex items-center gap-1">
-          Avantajları Gör →
-        </button>
+        <p className="text-accent text-sm font-semibold">Aboneliğinizin bitmesine 347 gün kaldı</p>
       </div>
     </aside>
   );
