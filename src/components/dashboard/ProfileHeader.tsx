@@ -6,7 +6,7 @@ const ProfileHeader = () => {
   return (
     <div className="rounded-xl overflow-hidden bg-card border border-border">
       {/* Cover */}
-      <div className="h-36 relative overflow-hidden">
+      <div className="h-44 relative overflow-hidden">
         <img src={coverBanner} alt="Kapak" width={1920} height={512} className="w-full h-full object-cover" />
       </div>
 
