@@ -6,48 +6,55 @@
 
 @layer base {
   :root {
-    --background: 222 47% 11%;
+    --background: 225 44% 8%;
     --foreground: 210 40% 92%;
 
-    --card: 220 40% 13%;
+    --card: 224 40% 12%;
     --card-foreground: 210 40% 92%;
 
-    --popover: 220 40% 13%;
+    --popover: 224 40% 12%;
     --popover-foreground: 210 40% 92%;
 
-    --primary: 142 60% 45%;
+    --primary: 142 60% 42%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 35% 18%;
+    --secondary: 224 38% 15%;
     --secondary-foreground: 210 40% 92%;
 
-    --muted: 220 30% 20%;
+    --muted: 224 30% 18%;
     --muted-foreground: 215 20% 55%;
 
-    --accent: 45 100% 51%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 43 96% 56%;
+    --accent-foreground: 225 44% 8%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 30% 22%;
-    --input: 220 30% 22%;
-    --ring: 142 60% 45%;
+    --border: 224 25% 18%;
+    --input: 224 25% 18%;
+    --ring: 142 60% 42%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 222 47% 8%;
-    --sidebar-foreground: 210 40% 85%;
-    --sidebar-primary: 142 60% 45%;
+    --sidebar-background: 225 50% 6%;
+    --sidebar-foreground: 215 20% 65%;
+    --sidebar-primary: 142 60% 42%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 35% 15%;
+    --sidebar-accent: 224 35% 13%;
     --sidebar-accent-foreground: 210 40% 92%;
-    --sidebar-border: 220 30% 18%;
-    --sidebar-ring: 142 60% 45%;
+    --sidebar-border: 224 25% 14%;
+    --sidebar-ring: 142 60% 42%;
 
-    --badge-active: 142 60% 45%;
+    --badge-active: 142 60% 42%;
     --badge-active-foreground: 0 0% 100%;
-    --stat-number: 45 100% 51%;
+    --stat-number: 43 96% 56%;
+
+    --glow-primary: 142 60% 42%;
+    --glow-accent: 43 96% 56%;
+
+    --shadow-card: 0 4px 24px -4px hsla(225, 50%, 4%, 0.6);
+    --shadow-card-hover: 0 8px 32px -4px hsla(142, 60%, 42%, 0.15);
+    --shadow-glow: 0 0 20px -4px hsla(142, 60%, 42%, 0.25);
   }
 }
 
@@ -57,7 +64,56 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground antialiased;
     font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .card-glass {
+    @apply bg-card/80 backdrop-blur-xl border border-border/60;
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-glass-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+  .card-glass-hover:hover {
+    box-shadow: var(--shadow-card-hover);
+    border-color: hsl(var(--primary) / 0.25);
+    transform: translateY(-2px);
+  }
+
+  .sidebar-glass {
+    @apply backdrop-blur-2xl;
+    background: linear-gradient(180deg, hsl(225 50% 6% / 0.95) 0%, hsl(225 50% 4% / 0.98) 100%);
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 16px -2px hsl(var(--glow-primary) / 0.3);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 16px -2px hsl(var(--glow-accent) / 0.3);
+  }
+
+  .gradient-cover {
+    background: linear-gradient(180deg, transparent 40%, hsl(var(--card)) 100%);
+  }
+
+  .nav-active {
+    background: linear-gradient(90deg, hsl(var(--primary) / 0.15) 0%, transparent 100%);
+    border-left: 3px solid hsl(var(--primary));
+  }
+
+  .btn-outline-glow {
+    @apply transition-all duration-300;
+  }
+  .btn-outline-glow:hover {
+    box-shadow: 0 0 12px -2px hsl(var(--accent) / 0.4);
+  }
+
+  .stat-glow {
+    text-shadow: 0 0 20px hsl(var(--stat-number) / 0.5);
   }
 }
