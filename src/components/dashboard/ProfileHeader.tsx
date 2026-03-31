@@ -31,9 +31,6 @@ const ProfileHeader = () => {
               </div>
             </div>
             <div className="flex gap-2 pb-1">
-              <button className="flex items-center gap-2 px-4 py-2.5 rounded-lg border border-primary/30 text-sm text-foreground hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 backdrop-blur-sm">
-                <MessageCircle className="w-4 h-4 text-primary" /> WhatsApp ile İletişime Geç
-              </button>
               <button className="flex items-center gap-2 px-4 py-2.5 rounded-lg border border-border text-sm text-foreground hover:bg-secondary hover:border-muted-foreground/30 transition-all duration-300 backdrop-blur-sm">
                 <Edit className="w-4 h-4" /> Profil Düzenle
               </button>
