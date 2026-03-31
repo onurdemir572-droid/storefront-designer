@@ -45,23 +45,22 @@ const ProfileHeader = () => {
       {/* Divider */}
       <div className="h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
 
-        {/* Stats as cards */}
-        <div className="grid grid-cols-3 gap-4 mt-5">
-          {[
-            { value: "12", label: "Aktif İlan" },
-            { value: "37", label: "Gelen Talep" },
-            { value: "5", label: "Hizmet Verilen Şehir" },
-          ].map((stat, i) => (
-            <div
-              key={stat.label}
-              className="text-center py-5 px-3 rounded-xl bg-secondary/60 border border-border/40 card-glass-hover animate-scale-in"
-              style={{ animationDelay: `${0.1 * i + 0.2}s` }}
-            >
-              <p className="text-3xl font-extrabold text-stat-number stat-glow">{stat.value}</p>
-              <p className="text-muted-foreground text-sm mt-1.5">{stat.label}</p>
-            </div>
-          ))}
-        </div>
+      {/* Stats as cards */}
+      <div className="grid grid-cols-3 gap-4 px-6 py-5">
+        {[
+          { value: "12", label: "Aktif İlan" },
+          { value: "37", label: "Gelen Talep" },
+          { value: "5", label: "Hizmet Verilen Şehir" },
+        ].map((stat, i) => (
+          <div
+            key={stat.label}
+            className="text-center py-5 px-3 rounded-xl bg-secondary/60 border border-border/40 card-glass-hover animate-scale-in"
+            style={{ animationDelay: `${0.1 * i + 0.2}s` }}
+          >
+            <p className="text-3xl font-extrabold text-stat-number stat-glow">{stat.value}</p>
+            <p className="text-muted-foreground text-sm mt-1.5">{stat.label}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
