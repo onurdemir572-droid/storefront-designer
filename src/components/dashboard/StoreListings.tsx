@@ -85,9 +85,6 @@ const StoreListings = () => {
                 </span>
               </div>
               <p className="text-muted-foreground text-xs mt-1.5">{listing.location}</p>
-              <p className="text-muted-foreground text-xs mt-1 flex items-center gap-1">
-                <Eye className="w-3 h-3" /> {listing.views}
-              </p>
             </div>
           </div>
         ))}
