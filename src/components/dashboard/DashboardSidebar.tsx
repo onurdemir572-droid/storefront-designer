@@ -6,7 +6,7 @@ const navItems = [
   { icon: User, label: "Profil" },
   { icon: Bell, label: "Bildirimlerim" },
   { icon: FileText, label: "İlanlarım" },
-  { icon: MessageCircle, label: "Mesaj Kutusu", badge: 37 },
+  { icon: MessageCircle, label: "Mesaj Kutusu" },
   { icon: Users, label: "Topluluk Projeleri" },
   { icon: Settings, label: "Ayarlar" },
 ];
