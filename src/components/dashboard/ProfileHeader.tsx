@@ -11,7 +11,7 @@ const ProfileHeader = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-card via-card/80 to-transparent" />
 
         {/* Profile Info overlaid on cover */}
-        <div className="absolute bottom-0 left-0 right-0 px-6 pb-5">
+        <div className="absolute bottom-0 left-0 right-0 px-6 pb-2">
           <div className="flex items-end justify-between">
             <div className="flex items-end gap-4">
               <div className="w-24 h-24 rounded-full border-4 border-card bg-secondary flex items-center justify-center overflow-hidden relative z-10 glow-primary ring-2 ring-primary/30">
