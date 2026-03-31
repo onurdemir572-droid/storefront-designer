@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { Eye } from "lucide-react";
 import listing1 from "@/assets/listing-1.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.jpg";
@@ -26,58 +28,66 @@ const listings = [
   },
 ];
 
-import { useState } from "react";
-
 const StoreListings = () => {
   const [activeTab, setActiveTab] = useState<"vitrin" | "yayinda">("vitrin");
+
   return (
-    <div className="bg-card rounded-xl border border-border p-6">
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-1 bg-secondary rounded-lg p-1">
+    <div className="card-glass rounded-xl p-6 animate-fade-in" style={{ animationDelay: "0.25s" }}>
+      <div className="flex items-center justify-between mb-5">
+        <div className="flex items-center gap-1 bg-muted/50 rounded-lg p-1 border border-border/30">
           <button
             onClick={() => setActiveTab("vitrin")}
-            className={`px-4 py-1.5 rounded-md text-sm font-semibold transition-colors ${
-              activeTab === "vitrin" ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+            className={`px-5 py-2 rounded-md text-sm font-semibold transition-all duration-300 ${
+              activeTab === "vitrin"
+                ? "bg-primary text-primary-foreground glow-primary shadow-lg"
+                : "text-muted-foreground hover:text-foreground"
             }`}
           >
             Mağaza Vitrinim
           </button>
           <button
             onClick={() => setActiveTab("yayinda")}
-            className={`px-4 py-1.5 rounded-md text-sm font-semibold transition-colors ${
-              activeTab === "yayinda" ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+            className={`px-5 py-2 rounded-md text-sm font-semibold transition-all duration-300 ${
+              activeTab === "yayinda"
+                ? "bg-primary text-primary-foreground glow-primary shadow-lg"
+                : "text-muted-foreground hover:text-foreground"
             }`}
           >
             Yayındaki İlanlarım
           </button>
         </div>
-        <button className="text-muted-foreground text-sm hover:text-foreground transition-colors">
+        <button className="text-muted-foreground text-sm hover:text-accent transition-colors duration-200 font-medium">
           Tüm İlanlarım →
         </button>
       </div>
       <div className="grid grid-cols-2 gap-4">
-        {listings.map((listing) => (
+        {listings.map((listing, i) => (
           <div
             key={listing.title}
-            className="flex items-center gap-4 bg-secondary rounded-xl p-4 border border-border hover:border-primary/30 transition-colors"
+            className="flex items-center gap-4 bg-secondary/50 rounded-xl p-4 border border-border/30 card-glass-hover animate-scale-in group"
+            style={{ animationDelay: `${0.08 * i + 0.3}s` }}
           >
-            <img
-              src={listing.image}
-              alt={listing.title}
-              loading="lazy"
-              width={80}
-              height={80}
-              className="w-20 h-20 rounded-lg object-cover flex-shrink-0"
-            />
+            <div className="relative overflow-hidden rounded-lg flex-shrink-0">
+              <img
+                src={listing.image}
+                alt={listing.title}
+                loading="lazy"
+                width={80}
+                height={80}
+                className="w-20 h-20 rounded-lg object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
             <div className="flex-1 min-w-0">
               <div className="flex items-start justify-between gap-2">
                 <h3 className="text-sm font-bold text-foreground truncate">{listing.title}</h3>
-                <span className="flex-shrink-0 bg-badge-active/20 text-badge-active text-xs font-bold px-2 py-0.5 rounded border border-badge-active/40">
+                <span className="flex-shrink-0 bg-badge-active/15 text-badge-active text-xs font-bold px-2.5 py-1 rounded-md border border-badge-active/30">
                   {listing.status}
                 </span>
               </div>
-              <p className="text-muted-foreground text-xs mt-1">{listing.location}</p>
-              <p className="text-muted-foreground text-xs mt-0.5">{listing.views}</p>
+              <p className="text-muted-foreground text-xs mt-1.5">{listing.location}</p>
+              <p className="text-muted-foreground text-xs mt-1 flex items-center gap-1">
+                <Eye className="w-3 h-3" /> {listing.views}
+              </p>
             </div>
           </div>
         ))}
