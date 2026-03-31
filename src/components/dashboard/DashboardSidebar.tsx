@@ -4,8 +4,9 @@ import recyclingLogo from "@/assets/recycling-logo.png";
 const navItems = [
   { icon: Home, label: "Genel Bakış", active: true },
   { icon: User, label: "Profil" },
+  { icon: Bell, label: "Bildirimlerim" },
   { icon: FileText, label: "İlanlarım" },
-  { icon: MessageCircle, label: "Talepler", badge: 37 },
+  { icon: MessageCircle, label: "Mesaj Kutusu", badge: 37 },
   { icon: Users, label: "Topluluk Projeleri" },
   { icon: Settings, label: "Ayarlar" },
 ];
