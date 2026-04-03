@@ -3,8 +3,8 @@ import { Plus, MessageCircle, Handshake } from "lucide-react";
 const actions = [
   {
     icon: Plus,
-    title: "Yeni İlan Ekle",
-    description: "Vitrininizi güçlendirin",
+    title: "Referans Ekle",
+    description: "Usta Profilinizi Güçlendirin",
     buttonText: "Yönet",
     badge: null,
   },
@@ -13,13 +13,6 @@ const actions = [
     title: "Talepleri Görüntüle",
     description: "Gelen Talepleri inceleyin",
     buttonText: "Görüntüle",
-    badge: "37 yeni",
-  },
-  {
-    icon: Handshake,
-    title: "Gerçekleştirilen Topluluk Projeleri Yardımları",
-    description: "Topluluk projelerinizi gösterin",
-    buttonText: "Projeler",
     badge: null,
   },
 ];
