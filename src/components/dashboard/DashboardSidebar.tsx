@@ -20,7 +20,7 @@ const DashboardSidebar = () => {
           <img src={recyclingLogo} alt="Logo" width={64} height={64} className="object-contain" />
         </div>
         <h2 className="text-foreground font-bold text-lg animate-fade-in" style={{ animationDelay: "0.1s" }}>Test Kullanıcı</h2>
-        <p className="text-muted-foreground text-sm animate-fade-in" style={{ animationDelay: "0.15s" }}>Mağaza Yönetim Paneli</p>
+        <p className="text-muted-foreground text-sm animate-fade-in" style={{ animationDelay: "0.15s" }}>Usta Profili Yönetim Paneli</p>
       </div>
 
       {/* Navigation */}
