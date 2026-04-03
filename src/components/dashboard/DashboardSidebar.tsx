@@ -20,7 +20,7 @@ const DashboardSidebar = () => {
           <img src={recyclingLogo} alt="Logo" width={64} height={64} className="object-contain" />
         </div>
         <h2 className="text-foreground font-bold text-lg animate-fade-in" style={{ animationDelay: "0.1s" }}>Test Kullanıcı</h2>
-        <p className="text-muted-foreground text-sm animate-fade-in" style={{ animationDelay: "0.15s" }}>Mağaza Yönetim Paneli</p>
+        <p className="text-muted-foreground text-sm animate-fade-in" style={{ animationDelay: "0.15s" }}>Usta Profili Yönetim Paneli</p>
       </div>
 
       {/* Navigation */}
@@ -47,7 +47,7 @@ const DashboardSidebar = () => {
           <div className="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center">
             <Shield className="w-4 h-4 text-primary" />
           </div>
-          <span className="text-sm font-bold text-foreground">MAĞAZA ÜYELİĞİ</span>
+          <span className="text-sm font-bold text-foreground">USTA ÜYELİĞİ</span>
         </div>
         <p className="text-muted-foreground text-xs mb-1">Bitiş: 13.03.2026</p>
         <p className="text-accent text-sm font-semibold">Aboneliğinizin bitmesine 347 gün kaldı</p>
