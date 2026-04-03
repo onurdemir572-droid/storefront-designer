@@ -19,7 +19,7 @@ const ProfileHeader = () => {
               </div>
               <div className="pb-1">
                 <h1 className="text-xl font-bold text-foreground">Test Kullanıcı</h1>
-                <p className="text-primary text-sm font-medium">Toptancı / Geri Dönüşüm</p>
+                <p className="text-primary text-sm font-medium">Usta / Hizmet Sağlayıcı</p>
                 <div className="flex items-center gap-4 mt-1.5 text-xs text-muted-foreground">
                   <span className="flex items-center gap-1"><MapPin className="w-3 h-3 text-accent" /> İstanbul, Kocaeli, Tekirdağ</span>
                   <span className="flex items-center gap-1"><Calendar className="w-3 h-3 text-accent" /> Üye: 18 Mart 2026 • Mağaza Üyesi</span>
