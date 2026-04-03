@@ -1,4 +1,4 @@
-import { MapPin, Calendar, MessageCircle, Edit, Phone, Mail, Home } from "lucide-react";
+import { MapPin, Calendar, MessageCircle, Edit, Phone, Mail, Home, CreditCard } from "lucide-react";
 import coverBanner from "@/assets/cover-banner.jpg";
 import recyclingLogo from "@/assets/recycling-logo.png";
 
@@ -8,6 +8,9 @@ const ProfileHeader = () => {
       {/* Cover as full background behind profile info */}
       <div className="relative">
         <img src={coverBanner} alt="Kapak" width={1920} height={512} className="w-full h-56 object-cover" />
+        <button className="absolute top-4 left-4 flex items-center gap-2 px-4 py-2 rounded-lg bg-card/70 backdrop-blur-md border border-border/50 text-sm font-semibold text-foreground hover:bg-card/90 transition-all duration-300 z-10">
+          <CreditCard className="w-4 h-4 text-primary" /> Usta Kartı Ön İzleme
+        </button>
         <div className="absolute inset-0 bg-gradient-to-t from-card via-card/80 to-transparent" />
 
         {/* Profile Info overlaid on cover */}
