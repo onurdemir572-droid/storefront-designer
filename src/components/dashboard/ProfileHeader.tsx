@@ -1,4 +1,4 @@
-import { MapPin, Calendar, MessageCircle, Edit, Phone, Mail, Home } from "lucide-react";
+import { MapPin, Calendar, MessageCircle, Edit, Phone, Mail, Home, CreditCard } from "lucide-react";
 import coverBanner from "@/assets/cover-banner.jpg";
 import recyclingLogo from "@/assets/recycling-logo.png";
 
