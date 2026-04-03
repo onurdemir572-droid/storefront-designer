@@ -3,8 +3,8 @@ import { Plus, MessageCircle, Handshake } from "lucide-react";
 const actions = [
   {
     icon: Plus,
-    title: "Yeni İlan Ekle",
-    description: "Vitrininizi güçlendirin",
+    title: "Referans Ekle",
+    description: "Usta Profilinizi Güçlendirin",
     buttonText: "Yönet",
     badge: null,
   },
@@ -13,13 +13,6 @@ const actions = [
     title: "Talepleri Görüntüle",
     description: "Gelen Talepleri inceleyin",
     buttonText: "Görüntüle",
-    badge: "37 yeni",
-  },
-  {
-    icon: Handshake,
-    title: "Gerçekleştirilen Topluluk Projeleri Yardımları",
-    description: "Topluluk projelerinizi gösterin",
-    buttonText: "Projeler",
     badge: null,
   },
 ];
@@ -28,7 +21,7 @@ const QuickActions = () => {
   return (
     <div className="card-glass rounded-xl p-6 animate-fade-in" style={{ animationDelay: "0.15s" }}>
       <h2 className="text-lg font-bold text-foreground mb-4">Hızlı İşlemler</h2>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 gap-4">
         {actions.map((action, i) => (
           <div
             key={action.title}

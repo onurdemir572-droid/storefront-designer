@@ -4,29 +4,7 @@ import listing1 from "@/assets/listing-1.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.jpg";
 
-const listings = [
-  {
-    image: listing1,
-    title: "Kırım Molozu (Beton, Tuğla Kiriği)",
-    location: "İstanbul Anadolu Yakası • 1 kamyon ve Üzeri",
-    views: "1.250 görüntüleme",
-    status: "Aktif",
-  },
-  {
-    image: listing2,
-    title: "İnşaat Temizliği Molozu Alınır",
-    location: "İstanbul geneli • Günlük sevkiyat",
-    views: "980 görüntüleme",
-    status: "Aktif",
-  },
-  {
-    image: listing3,
-    title: "Geri Dönüşüm Hurdaşı Çeşitleri",
-    location: "Denizli, İstanbul, Kocaeli • Yerinde alım",
-    views: "860 görüntüleme",
-    status: "Aktif",
-  },
-];
+const listings: { image: string; title: string; location: string; views: string; status: string }[] = [];
 
 const StoreListings = () => {
   const [activeTab, setActiveTab] = useState<"vitrin" | "yayinda">("vitrin");
@@ -43,7 +21,7 @@ const StoreListings = () => {
                 : "text-muted-foreground hover:text-foreground"
             }`}
           >
-            Usta Vitrinim
+            Referanslarım
           </button>
           <button
             onClick={() => setActiveTab("yayinda")}
