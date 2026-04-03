@@ -22,7 +22,7 @@ const ProfileHeader = () => {
                 <p className="text-primary text-sm font-medium">Usta / Hizmet Sağlayıcı</p>
                 <div className="flex items-center gap-4 mt-1.5 text-xs text-muted-foreground">
                   <span className="flex items-center gap-1"><MapPin className="w-3 h-3 text-accent" /> İstanbul, Kocaeli, Tekirdağ</span>
-                  <span className="flex items-center gap-1"><Calendar className="w-3 h-3 text-accent" /> Üye: 18 Mart 2026 • Mağaza Üyesi</span>
+                  <span className="flex items-center gap-1"><Calendar className="w-3 h-3 text-accent" /> Üye: 18 Mart 2026 • Usta Üyesi</span>
                 </div>
                 <div className="flex items-center gap-4 mt-1 text-xs text-muted-foreground">
                   <span className="flex items-center gap-1"><Phone className="w-3 h-3 text-accent" /> +90 532 000 00 00</span>

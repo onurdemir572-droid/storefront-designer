@@ -43,7 +43,7 @@ const StoreListings = () => {
                 : "text-muted-foreground hover:text-foreground"
             }`}
           >
-            Mağaza Vitrinim
+            Usta Vitrinim
           </button>
           <button
             onClick={() => setActiveTab("yayinda")}

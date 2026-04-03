@@ -47,7 +47,7 @@ const DashboardSidebar = () => {
           <div className="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center">
             <Shield className="w-4 h-4 text-primary" />
           </div>
-          <span className="text-sm font-bold text-foreground">MAĞAZA ÜYELİĞİ</span>
+          <span className="text-sm font-bold text-foreground">USTA ÜYELİĞİ</span>
         </div>
         <p className="text-muted-foreground text-xs mb-1">Bitiş: 13.03.2026</p>
         <p className="text-accent text-sm font-semibold">Aboneliğinizin bitmesine 347 gün kaldı</p>
